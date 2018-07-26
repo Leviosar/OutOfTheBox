@@ -1,0 +1,183 @@
+p {
+  color: white;
+  font-family: Kollektif;
+}
+
+#container {
+  width: 80vw;
+  position: absolute;
+  left: 10vw;
+}
+input[type=range] {
+  /*removes default webkit styles*/
+  -webkit-appearance: none;
+  /*fix for FF unable to apply focus style bug */
+  border: 1px solid white;
+  /*required for proper track sizing in FF*/
+  width: 80vw;
+  margin-bottom: 2vh;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  width:80vw;
+  height: 5px;
+  background: white;
+  border: none;
+  border-radius: 3px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: none;
+  height: 4vh;
+  width: 4vh;
+  border-radius: 50%;
+  background: #f4c242;
+  margin-top: -2vh;
+}
+
+input[type=range]:focus {
+  outline: none;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: white;
+}
+
+input[type=range]::-moz-range-track {
+  width:80vw;
+  height: 5px;
+  background: white;
+  border: none;
+  border-radius: 3px;
+}
+
+input[type=range]::-moz-range-thumb {
+  border: none;
+  height: 4vh;
+  width: 4vh;
+  border-radius: 50%;
+  background: #f4c242;
+}
+
+
+/*hide the outline behind the border*/
+
+input[type=range]:-moz-focusring {
+  outline: 1px solid white;
+  outline-offset: -1px;
+}
+
+input[type=range]::-ms-track {
+  width:80vw;
+  height: 5px;
+  /*remove bg colour from the track, we'll use ms-fill-lower and ms-fill-upper instead */
+  background: transparent;
+  /*leave room for the larger thumb to overflow with a transparent border */
+  border-color: transparent;
+  border-width: 6px 0;
+  /*remove default tick marks*/
+  color: transparent;
+}
+
+input[type=range]::-ms-fill-lower {
+  background: white;
+  border-radius: 10px;
+}
+
+input[type=range]::-ms-fill-upper {
+  background: white;
+  border-radius: 10px;
+}
+
+input[type=range]::-ms-thumb {
+  border: none;
+  height: 4vh;
+  width: 4vh;
+  border-radius: 50%;
+  background: #f4c242;
+}
+
+input[type=range]:focus::-ms-fill-lower {
+  background: white;
+}
+
+input[type=range]:focus::-ms-fill-upper {
+  background: white;
+}
+
+div.hud {
+  display: flex;
+  flex-direction: row;
+  width: 80vw;
+  height: 12vh;
+  justify-content: center;
+  align-items: center;
+}
+div.hud > div {
+  flex-grow: 1;
+  color: white;
+  font-size: 15vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5vh;
+}
+
+input[type="range"]{
+  margin-bottom: 5vh;
+  display: none;
+}
+
+div.progressbar {
+  width: 80vw;
+  height: 4vh;
+  background: white;
+  display: flex;
+  border-radius: 5px;
+  margin-bottom: 5vh;
+}
+
+div.progressbar-inside {
+  width: 20%;
+  background: #f4c242;
+  border-radius: 5px;
+}
+
+div.progressbar-inside p {
+  color: black;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  min-width: 80vw;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+ul li {
+  color: white;
+  font-size: 8vw;
+  transition: ease .2s;
+}
+
+div.content{
+  display: none;
+  width: 80vw;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+div.content-container {
+  height: 55vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  overflow: hidden;
+}
+
+

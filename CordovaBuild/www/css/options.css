@@ -1,0 +1,50 @@
+div.opt-title{
+    display: flex;
+    width: 100vmin;
+    justify-content: center;
+    align-items: center;
+    height: 20vmin;
+    font-size: 7vmin;
+    font-family: Roboto;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.opt-item{
+    width: 80vmin;
+    display: flex;
+    flex-direction: column;
+}
+
+div.input-group>input{
+    height: 10vmin;
+    border: none;
+    background: #ebebeb;
+    padding: 5vmin;
+    font-size: 5vmin;
+    font-family: Roboto;
+    width: 65vmin;
+}
+
+div.input-group>input[type=button]{
+    border: none;
+    padding: 0;
+}
+
+div.input-group{
+    display: flex;
+}
+
+div.input-group>label{
+    background:#3390c9;
+    height: 10vmin;
+    width: 15vmin;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}

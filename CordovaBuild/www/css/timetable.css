@@ -1,0 +1,209 @@
+section.time-section {
+    height: 85vh;
+    width: 100vw;
+    display: flex;
+
+}
+
+div.time-left {
+    height: 85vh;
+    width: 15vw;
+    background: white;
+    font-size: 15vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.time-day {
+    width: 70vw;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+div.time-right{
+    height: 85vh;
+    width: 15vw;
+    background: white;
+    font-size: 15vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.time-right:focus, div.time-left:focus{
+    background: aliceblue
+}
+
+div.day-title {
+    width: 100%;
+    height: 6vh;
+    font-family: Roboto;
+    font-size: 8vw;
+    text-align: center;
+    margin-top: 5vh;
+    margin-bottom: 3vh;
+}
+
+div.add-class{
+    width: 18vw;
+    height: 18vw;
+    background:#3390c9;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 5%;
+    left: 70%;
+    font-size: 10vw;
+}
+
+div.day-body{
+    width: 72vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+div.class{
+    width: 70vw;
+    height: 8vh;
+    font-family: Roboto;
+    font-size: 5vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+small {
+    font-size: 4vw;
+    color: grey;
+}
+
+div.class-label {
+    height: 6vh;
+    width: 5vw;
+    margin-right: 3vw;
+    margin-top: .5vh;
+}
+
+section.classForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5vh;
+}
+
+div.colorPicker{
+    margin-top: 4vh; 
+    width: 80vw;
+    height: 6vh;
+    font-family: Kollektif;
+    display: flex;
+    align-items: center;
+    font-size: 6vw;
+}
+
+div.colorLabel {
+    width: 4vh;
+    height: 4vh;
+    margin-right: 8vw;;
+    border-radius: 50%;
+    border: solid 1px black;
+}
+
+div.colors {
+    width: 82vw;
+    height: 20vh;
+    display: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 10vw;
+    top: 40vh;
+    background: white;
+}
+
+div.colors > div {
+    margin-right: 2vw;
+    margin-left: 2vw;
+}
+
+div.colors-options {
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+}
+
+div.range-color {
+    margin-top: 2vh;
+    display: flex;
+}
+
+input.range-color {
+    flex: none;
+    width: 60vw;
+    margin-right: 5vw;
+}
+
+input.display-text {
+    flex: none;
+    width: 15vw;
+}
+
+input[type='time']{
+    margin-top: 6vh;
+    border: none;
+    border-bottom: 3px solid #3390c9;
+    height: 3vh;
+    display: flex;
+    font-family: Kollektif;
+    background: transparent;
+}
+
+div.time-class{
+    font-size: 10vh;
+    color: #3390c9;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: flex-end;
+}
+
+label{
+    width: 40vw;
+}
+
+div.time-picker {
+    display: flex;
+
+}
+
+div.title {
+    font-size: 6vw;
+    font-family: Kollektif;
+    color: black;
+}
+
+div.week {
+    width: 80vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+div.day{
+    border: 2px solid #3390c9;
+    height: 5vh;
+    width: 9vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Kollektif;
+}

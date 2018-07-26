@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Oob!</title>
+	<meta charset="utf-8">
+	
+	<!-- Tag meta/viewport para otimização em mobile -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+	<!-- Estilos próprios gerais -->
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/input.css">
+	<link rel="stylesheet" type="text/css" href="css/img.css">
+    <link rel="stylesheet" type="text/css" href="css/indice.css">
+    <link rel="stylesheet" type="text/css" href="css/options.css">
+  
+</head>
+
+<body>
+	<div class="limits">
+        <div class="todo">
+            <header>
+                <div class="menu-trigger">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div id="text-header">Opções</div>
+            </header>
+            <section>
+                <div class="opt-title">Informações da conta</div>
+                <div class="opt-item">
+                    <div class="opt-icon"></div>
+                    <div class="input-group">
+                        <label for="nome"><i class="fas fa-edit"></i></label>
+                        <input type="text" name="Nome" id="nome" value="">    
+                    </div>
+                    <div class="input-group">
+                        <label for="Email"><i class="fas fa-edit"></i></label>
+                        <input type="email" name="Email" id="Email" value="">    
+                    </div>
+                    <div class="input-group">
+                        <label for="Senha"><i class="fas fa-edit"></i></label>
+                        <input type="password" name="Senha" id="Senha" value="">    
+                    </div>
+                    <div class="input-group">
+                        <label for="Delete"><i class="fas fa-trash"></i></label>
+                        <input type="button" name="Delete" id="Delete" value="Excluir sua conta">    
+                    </div>
+                </div>
+            </section>
+            <div class="shadow-menu"></div>
+        </div>
+
+        <div class="side-menu">
+            <div class="menu-logo">
+                <img class="menu-logo" src="img/logos/logo-sw.png">
+            </div>
+
+            <div class="menu-trigger-close">
+                <i class="fas fa-times"></i>
+            </div>
+            
+            <div class="menu-item">
+                <a href="xplist.html">Experiências</a>
+            </div>
+            <div class="menu-item">
+                <a href="profile.html">Perfil</a>
+            </div>
+            <div class="menu-item">
+                <a href="extra.html">Extras</a>
+            </div>
+            <div class="menu-item">
+                <a href="#">Opções</a>
+            </div>
+            <div class="menu-item logout">
+                <a href="#">Sair</a>
+            </div>
+        </div>
+
+    </div>
+    
+	<!-- Scripts próprios -->
+	<script type="text/javascript" src="js/Usuario.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/indice.js"></script>
+	<script type="text/javascript" src="js/visualScripts.js"></script>
+	<script type="text/javascript" src="js/options.js"></script>
+
+	<!-- Frameworks -->
+
+	<!-- Font-Awesome - CDN externo -->
+    <script type="text/javascript" src="vendor/fontawesome/fontawesome.js"></script>
+	<script type="text/javascript" src="vendor/fontawesome/solid.js"></script>
+	<script type="text/javascript" src="vendor/sweetalert/sweetalert.js"></script>
+	<script type="text/javascript" src="vendor/cripto/rollups/sha256.js"></script>
+	<script type="text/javascript" src="vendor/cripto/rollups/md5.js    "></script>
+
+</body>
+</html>

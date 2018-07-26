@@ -1,0 +1,31 @@
+p {
+    color: white;
+    font-family: Kollektif;
+    /* text-align: justify; */
+    margin-bottom: 2vh;
+}
+
+div.paragrafo {
+    width: 80vw;
+    position: absolute;
+    left: 10vw;
+}
+
+div.explanation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button.giant-red-button-of-dead{
+    background: #db4b4b;
+    border: none;
+    color: white;
+    height: 30vh;
+    width: 30vh;
+    border-radius: 50%;
+    font-family: Kollektif;
+    font-size: 2em;
+    box-shadow: 0px 20px #bd2c2c;
+    margin-top: 5vh;
+}

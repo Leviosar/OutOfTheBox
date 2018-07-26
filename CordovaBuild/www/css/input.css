@@ -1,0 +1,196 @@
+input.range {
+	width: 80vw;	
+	background: white;
+	border-bottom: 3vh;
+}
+
+input:focus {
+	outline: none;
+}
+
+input {
+	margin-bottom: 1vh;
+}
+ 
+input.text {
+	background-color: transparent;
+	height: 12vw;
+	font-size: 1.5em;
+	border:none;
+	border-bottom: 6px dashed white; 
+	color: white;
+	font-family: Kollektif;
+	width: 100%;
+}
+
+input.text:focus {
+	outline: none;
+	border-bottom: 6px dashed #f4c242; 
+}
+
+input.textCorrect:focus {
+	border-bottom: 6px dashed #34cd6f;
+}
+input.textWrong:focus {
+	border-bottom: 6px dashed #db6146;
+}
+
+input.text::placeholder {
+	font-size: 1em;
+	color: white;
+	opacity: 0.9;
+    font-family: Kollektif;
+}
+
+input.button, button.button {
+	background-color: #fff;
+	height: 15vw;
+	border: none;
+	color: #3390c9;
+	font-family: Kollektif;
+	font-size: 2em;
+	box-shadow: -10px 10px #2583b3;
+	width: 100%
+}
+
+div.checkboxdiv{
+	margin: 0 auto;
+	text-align: center;  
+  }
+  
+  input[type='checkbox'] {
+	display:block;
+	margin: 0 auto;
+	-webkit-appearance: button;
+	border:none;
+	background: url(http://www.pixelslip.be/img/check.png) no-repeat 0 0 transparent;
+	background-color: #db6146;
+	width: 8vh;
+	height: 4vh;
+	border-radius: 3px;
+	box-shadow: inset 0 1px 4px rgba(0,0,0,.2);
+	cursor: pointer;
+	position: relative;
+	transition: background-color 1s;
+  }
+
+
+  input[type='checkbox']:after{
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 45%;
+	height: 80%;
+	margin: 4%;
+	border-radius: 3px;
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	
+	background: rgb(255,255,255);
+	background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(243,243,243,1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(243,243,243,1)));
+	background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(243,243,243,1) 100%);
+	background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(243,243,243,1) 100%);
+	background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(243,243,243,1) 100%);
+	background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(243,243,243,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f3f3f3',GradientType=0 );
+  
+   transition: .5s all;
+  }
+  
+  input[type='checkbox']:checked{
+	background-color: #34cd6f;
+  } 
+  
+  input[type='checkbox']:checked:after {
+	left: 45%;
+  }
+
+  input.text-blue {
+	border-bottom: 3px solid #3390c9; 
+	color: black;
+	}
+
+	input.text-blue:hover{
+		border-bottom: 3px solid #f4c242; 
+	}
+
+input.text-blue::placeholder {
+	font-size: 1em;
+	color: black;
+	opacity: 0.9;
+    font-family: Kollektif;
+}
+
+input.button-blue, button.-blue {
+	background-color: #3390c9;
+	height: 12vw;
+	border: none;
+	color: #fff;
+	font-family: Kollektif;
+	font-size: 2em;
+	box-shadow: -2px 3px #bbbbbb;
+	width: 100%
+}
+
+input[type=range] {
+  /*removes default webkit styles*/
+  -webkit-appearance: none;
+  /*fix for FF unable to apply focus style bug */
+  border: 1px solid white;
+  /*required for proper track sizing in FF*/
+  width: 300px;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 300px;
+  height: 5px;
+  background: #ddd;
+  border: none;
+  border-radius: 3px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: none;
+  height:2vh;
+  width:2vh;
+  margin-top: -6vh;
+  border-radius: 50%;
+  background: #f4c242;
+  margin-top: -4px;
+}
+
+input[type=range]:focus {
+  outline: none;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #ccc;
+}
+
+input[type=range]::-moz-range-track {
+  width: 300px;
+  height: 5px;
+  background: #ddd;
+  border: none;
+  border-radius: 3px;
+}
+
+input[type=range]::-moz-range-thumb {
+  border: none;
+  height:2vh;
+  width:2vh;
+  margin-top: -1vh;
+  border-radius: 50%;
+  background: #f4c242;
+}
+/*hide the outline behind the border*/
+input[type=range]:-moz-focusring {
+  outline: 1px solid white;
+  outline-offset: -1px;
+}
+
+
+

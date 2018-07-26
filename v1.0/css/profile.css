@@ -1,0 +1,58 @@
+section div.avatar-container{
+    height: 40vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section div.avatar-container img{
+    height: 40vw;
+    z-index: 5;
+}
+
+section div.avatar-container div.border{
+    flex: none;
+    height: 27vh;
+    width: 27vh;
+    border-radius: 100%;
+    background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+    radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+    display: block;
+    position: absolute;
+}
+
+section div.inventory {
+    width: 100vw;
+    height: 20vw;
+}
+
+section div.inventory div{
+    width: 50vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 3vw;
+}
+
+section div.inventory div span{
+    font-family: Kollektif;
+    font-size: 5vw;
+}
+
+h2{
+    color: black !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section hr{
+    width: 60vw;
+    background: black;
+    border: 1px solid black;
+}
+
+section div.inventory img {
+    height: 8vh;
+}
