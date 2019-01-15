@@ -24,3 +24,13 @@ I decided to go for a hybrid app because i really suck on Java or Kotlin and a h
 The experiences are spread on five areas: math, chemistry, phisics, biology and computer programming. i'm using as foundation the high school curriculum of Brazil to elaborate the experiences and at this point i've already made 4 of them and im planning to make a apk build around this week so you can play them (if you know portuguese of course).
 
 For now that's all, any doubts you can contact me here or on @joaocampo3 on Twitter, i will write more about the project the soon i have the time, goodbye.
+
+## New year, new code, new challenges
+
+Since I started Oob, my main goal has always been to open new horizons to educators and students. At this moment i'm only achieving half of my goal, the students. 2019 just got here and i think we can make more on this year, big changes are coming to this project and i hope it's for good. Basically, i'm aiming to:
+
+- Migrate the code to new (kinda) technologies i'm learning. I want to use Angular or Vue.js in the front end and Laravel on the back end. I'll always love Vanilla but it's time to say goodbye.
+- Start a hole new module where educators can build experiences and teach their knowledges globally.
+- Create a community of educators and developers to help me on this path
+
+Well, how i said in the title, new challenges are arriving all the time and i'm ready to face them with courage and coffee.
