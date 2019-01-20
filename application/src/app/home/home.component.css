@@ -1,0 +1,58 @@
+:host{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    font-family: Kollektif;
+    align-items: center;
+    justify-content: center;
+}
+
+:host > *{
+    flex: none;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+div.showcase{
+    width: 80vw;
+    height: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;    
+    margin-top: 10vw;
+}
+
+div.showcase > h2{
+    font-family: Kollektif;
+    width: 100%;
+    min-height: 30%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding-left: 3%;   
+}
+
+div.showcase > div.showcase-description{
+    height: 70%;
+    width: 100%;
+    border-left: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+
+div.showcase > h2.primary{
+    background: var(--pri-blue-color);
+    color: white;
+}
+
+div.showcase > h2.secondary{
+    background: var(--pri-oran-color);
+    color: white;
+}

@@ -1,0 +1,5 @@
+/Admin/.*
+./node_modules
+./docs
+./database
+./application/node_modules

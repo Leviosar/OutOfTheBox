@@ -1,0 +1,15 @@
+<section>
+    <form>
+        <div class="input-group">
+            <label class="secondary" for="login"><i class="fas fa-user"></i></label>
+            <input (input)="setLogin($event)" id="login" class="secondary" type="text" placeholder="Login">
+        </div>
+        <div class="input-group">
+            <input (input)="setPassword($event)" id="password" class="secondary" type="password" placeholder="Password">
+            <label class="secondary" for="password"><i class="fas fa-star-of-life"></i></label>
+        </div>
+        <div class="input-group">
+            <button (click)="scroll.slide(2)" class="secondary" type="button">Sign in</button>
+        </div>
+    </form>
+</section>

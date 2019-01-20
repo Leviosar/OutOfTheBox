@@ -1,0 +1,121 @@
+/* Inputs que possuam uma label na esquerda */
+
+*.input-group > label + input[type=text], *.input-group > label + input[type=password],
+*.input-group > label + input[type=email], *.input-group > label + input[type=number]
+{
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+/* Inputs que possuam uma label na direita */
+
+*.input-group > input[type=text], *.input-group > input[type=password],
+*.input-group > input[type=email], *.input-group > input[type=number]
+{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+/* Inputs em geral */
+
+*.input-group > input[type=text], *.input-group > input[type=password], *.input-group > input[type=email], *.input-group > input[type=number]
+{
+    height: 12vw;
+    background: none;
+    width: 85%;
+    padding-left: 3%;
+}
+
+/* Cores para inputs */
+
+input.primary { border: 2px solid var(--pri-blue-color) }
+input.secondary { border: 2px solid var(--pri-oran-color) }
+
+/* Labels que possuam inputs adjacentes */
+
+*.input-group > label{
+    height: 12vw;
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+/* Labels do lado de inputs primários  */
+
+*.input-group > label.primary{
+    border: 2px solid var(--pri-blue-color);
+    background: var(--pri-blue-color);
+} 
+
+/* Labels do lado de inputs secundários  */
+
+*.input-group > label.secondary{
+    border: 2px solid var(--pri-oran-color);
+    background: var(--pri-oran-color);
+} 
+
+/* Labels que possuam inputs a direita */
+
+*.input-group > label{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+/* Labels que possuam inputs a esquerda */
+
+*.input-group > input + label{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+/* Características gerais de container input-group */
+
+*.input-group{
+    width: 100%;
+    height: 12vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5vh;
+}
+
+/* Inputs gerais em estados */
+
+input:focus{
+    outline: none;
+}
+
+/* Button ou input submit */
+
+*.input-group > button, *.input-group > input[type=submit]{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 12vw;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.5em;
+}
+
+*.input-group > button.primary, *.input-group > input[type=submit].primary{
+    background: var(--pri-blue-color);
+    color: white;
+}
+
+*.input-group > button.secondary, *.input-group > input[type=submit].secondary{
+    background: var(--pri-oran-color);
+    color: white;
+    box-shadow: 0px 3px 2px rgba(0,0,0, 0.1)
+}
+

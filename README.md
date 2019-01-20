@@ -5,6 +5,17 @@ A hybrid app to expand the limits of education.
 
 Hello, i'm a brazilian 17 years old student and this project has been developed as a course conclusion paper, many of the documentation are for burocracy purposes only and i'm trying my best to implement it all.
 
+
+## New year, new code, new challenges
+
+Since I started Oob, my main goal has always been to open new horizons to educators and students. At this moment i'm only achieving half of my goal, the students. 2019 just got here and i think we can make more on this year, big changes are coming to this project and i hope it's for good. Basically, i'm aiming to:
+
+- Migrate the code to new (kinda) technologies i'm learning. I want to use Angular or Vue.js in the front end and Laravel on the back end. I'll always love Vanilla but it's time to say goodbye.
+- Start a hole new module where educators can build experiences and teach their knowledges globally.
+- Create a community of educators and developers to help me on this path
+
+Well, how i said in the title, new challenges are arriving all the time and i'm ready to face them with courage and coffee.
+
 ## Before we start
 
 The idea came out of a conversation with a friend who was studying the Explorable Explanations movement for his own paper and introduced me to Victor's Bret Work. At first i loved all the philosophy of the movement and it kept me wondering about why the major public of the EE movement was and still are teachers. Why students aren't so close to those wonderful ideas? Well, they don't even know about it.
@@ -25,12 +36,22 @@ The experiences are spread on five areas: math, chemistry, phisics, biology and 
 
 For now that's all, any doubts you can contact me here or on @joaocampo3 on Twitter, i will write more about the project the soon i have the time, goodbye.
 
-## New year, new code, new challenges
 
-Since I started Oob, my main goal has always been to open new horizons to educators and students. At this moment i'm only achieving half of my goal, the students. 2019 just got here and i think we can make more on this year, big changes are coming to this project and i hope it's for good. Basically, i'm aiming to:
+## Project setup
 
-- Migrate the code to new (kinda) technologies i'm learning. I want to use Angular or Vue.js in the front end and Laravel on the back end. I'll always love Vanilla but it's time to say goodbye.
-- Start a hole new module where educators can build experiences and teach their knowledges globally.
-- Create a community of educators and developers to help me on this path
+### Clone it, fork it, code it, push it.
 
-Well, how i said in the title, new challenges are arriving all the time and i'm ready to face them with courage and coffee.
+Anyone with will to help is welcome to clone this repository, check the issues section or just implement a new functionality, submit as a pull request and we'll check you code.
+
+```
+$ git clone https://github.com/Leviosar/OutOfTheBox
+```
+
+If you're not used to package manager there's nothing to worry about, just read [this article] (https://medium.freecodecamp.org/javascript-package-managers-101-9afd926add0a) and get started with them. On this project i'm using npm so after you clone the repo, some dependencies are needed to make the project really work. Go to the project/oob folder, open a new terminal window and type
+
+```
+$ npm install
+```
+
+The project contains Angular, and this comes with a LOT of dependecies, so it can take a while to download and extract it all
+
