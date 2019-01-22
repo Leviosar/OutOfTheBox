@@ -9,7 +9,7 @@ CREATE TABLE tag (
 CREATE TABLE users (
     id SERIAL NOT NULL PRIMARY KEY ,
     password VARCHAR(128) NOT NULL,
-    email VARCHAR NOT NULL,
+    email VARCHAR NOT NULL UNIQUE,
     name VARCHAR(255) NOT NULL,
     created_in TIMESTAMP NOT NULL
 );
@@ -26,7 +26,7 @@ CREATE TABLE follows (
 CREATE TABLE access_token (
     token VARCHAR(64) NOT NULL,
     created_in TIMESTAMP NOT NULL,
-    id_user INTEGER NOT NULL,
+    id_user INTEGER NOT NULL PRIMARY KEY,
     FOREIGN KEY (id_user) REFERENCES users (id)
 );
 
