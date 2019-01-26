@@ -1,4 +1,4 @@
-# Out Of The Box! (Oob)
+# Wisdom
 
 A hybrid app to expand the limits of education.
 
@@ -8,7 +8,7 @@ Hello, i'm a brazilian 17 years old student and this project has been developed 
 
 ## New year, new code, new challenges
 
-Since I started Oob, my main goal has always been to open new horizons to educators and students. At this moment i'm only achieving half of my goal, the students. 2019 just got here and i think we can make more on this year, big changes are coming to this project and i hope it's for good. Basically, i'm aiming to:
+Since I started Wisdom, my main goal has always been to open new horizons to educators and students. At this moment i'm only achieving half of my goal, the students. 2019 just got here and i think we can make more on this year, big changes are coming to this project and i hope it's for good. Basically, i'm aiming to:
 
 - Migrate the code to new (kinda) technologies i'm learning. I want to use Angular or Vue.js in the front end and Laravel on the back end. I'll always love Vanilla but it's time to say goodbye.
 - Start a hole new module where educators can build experiences and teach their knowledges globally.
@@ -47,7 +47,7 @@ Anyone with will to help is welcome to clone this repository, check the issues s
 $ git clone https://github.com/Leviosar/OutOfTheBox
 ```
 
-If you're not used to package manager there's nothing to worry about, just read [this article] (https://medium.freecodecamp.org/javascript-package-managers-101-9afd926add0a) and get started with them. On this project i'm using npm so after you clone the repo, some dependencies are needed to make the project really work. Go to the project/oob folder, open a new terminal window and type
+If you're not used to package manager there's nothing to worry about, just read [this article] (https://medium.freecodecamp.org/javascript-package-managers-101-9afd926add0a) and get started with them. On this project i'm using npm so after you clone the repo, some dependencies are needed to make the project really work. Go to the project/application folder, open a new terminal window and type
 
 ```
 $ npm install

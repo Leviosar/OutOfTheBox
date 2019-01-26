@@ -3,24 +3,25 @@ module.exports = class User{
     
     constructor(){
         let Connection = require("./Data")
-        this.id = 1
-        this.token = 'NAIBYEDAW'
-        this.info = {}    
         this.connection = new Connection()
     }
 
-    getInfo(request, response){}
+    // Input: request<express.request>, response<express.response>
+    // Output: JSON
+    // Output format:
+    // {
+    //   status: boolean,
+    //   token: string,
+    //   msg: string
+    // }
+    // Description: Verify user's email existance in the database, in case true, compare the input password with the database bcrypt hash
+    // and returns the user's token. In case false, throw an error
     
-    async login(request, response, exp){
-        
-        // Selects password from the database
+    async login(request, response){
+
         let rows = await this.connection.select("SELECT id, password FROM users WHERE email = $1", request, response, [request.body.email])
         let hash = rows[0].password
-        
-        // Bcrypt implementation
         let bcrypt = require("bcrypt")
-        
-        // Get password from body
         let password = request.body.password
         
         bcrypt.compare(password, hash, async (err, res)=>{
@@ -36,13 +37,44 @@ module.exports = class User{
         })
     }
 
+    // Input: request<express.request>, response<express.response>
+    // Output: JSON
+    // Output format:
+    // {
+    //   status: boolean,
+    //   id_user: string
+    // }
+    // Description: Receives user's token (SHA256) from the request and searchs for the value on the access_token table
+    // in case true, authenticate the user and returns the id. In case false throw an error
+
     async auth(request, response){
         await this.connection.select("SELECT * FROM access_token WHERE token = $1", request, response, request.params)
     }
 
+    // Input: request<express.request>, response<express.response>
+    // Output: JSON
+    // Output format:
+    // {
+    //   id: integer,
+    //   name: string
+    //   email: string
+    //   password: string
+    // }
+    // Description: Select all form all users (this really shouldn't be used)
+
     async all(request, response){
         await this.connection.select("SELECT * FROM users", request, response)
     }
+
+    // Input: request<express.request>, response<express.response>
+    // Output: JSON
+    // Output format:
+    // {
+    //   status: true,
+    //   token: string,
+    //   id: integer
+    // }
+    // Description: Generate and insert (using postgreSQL upsert) a random SHA256 token to auth an user, returns the user_id and token
 
     async generateToken(request, response){
         let hash = require("crypto")
@@ -51,6 +83,16 @@ module.exports = class User{
         request, response, [token, request.params.id])
         console.log(reply)
     }
+
+    // Input: request<express.request>, response<express.response>
+    // Output: JSON
+    // Output format:
+    // {
+    //   status: boolean,
+    //   msg: string,
+    //   error: string
+    // }
+    // Description: Register a user in the database with 10 rounds bcrypt hash
 
     async register(request, response){
         let bcrypt = require("bcrypt")
