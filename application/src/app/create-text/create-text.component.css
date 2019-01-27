@@ -1,0 +1,40 @@
+:host > button{
+    height: 20vw;
+    width: 20vw;
+    border-radius: 100vw;
+    background: var(--pri-blue-color);
+    color: white;
+    font-size: 2em;
+    border: 1px solid var(--sec-blue-color);
+    box-shadow: 2px 2px 3px rgba(0,0,0, 0.1);
+    transition: .25s ease;
+    animation: scale 1s infinite;
+    z-index: 5;
+    position: relative;
+    top: 132.777vw;
+    left: 70vw;
+}
+
+:host{
+    position: fixed;
+    top: 0;
+    left: 100vw;
+    width: 100vw;
+    height: 177.777vw;
+}
+
+:host > div.editor{
+    display: none;
+}
+
+@keyframes scale{
+    0%{
+        transform: rotate(0deg)
+    }
+    50%{
+        transform: rotate(15deg)
+    }
+    100%{
+        transform: rotate(0deg)
+    }
+}

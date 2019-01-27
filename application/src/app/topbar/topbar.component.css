@@ -1,6 +1,6 @@
 :host{
     width: 100%;
-    height: 18vw;
+    height: 15vw;
 }
 
 ul {
@@ -10,7 +10,8 @@ ul {
     justify-content: space-evenly;
     margin: 0;
     padding-inline-start: 0;
-    height: 80%;
+    height: 85%;
+    color: var(--pri-blue-color);
 }
 
 ul > li {
@@ -28,7 +29,7 @@ ul > li:nth-child(n+2){
 
 div{
     width: 100%;
-    height: 10%;
+    height: 15%;
     border-bottom: 1px solid #eee;
 }
 
@@ -38,4 +39,21 @@ div > div.selector{
     background: var(--pri-blue-color);
     transition: .25s ease;
     border: none;
+}
+
+button{
+    height: 20vw;
+    width: 20vw;
+    border-radius: 100vw;
+    background: var(--pri-blue-color);
+    color: white;
+    font-size: 2em;
+    border: 1px solid var(--sec-blue-color);
+    box-shadow: 2px 2px 3px rgba(0,0,0, 0.1);
+    transition: .25s ease;
+    animation: scale 1s infinite;
+    z-index: 5;
+    position: relative;
+    top: 135vw;
+    left: 70vw;
 }

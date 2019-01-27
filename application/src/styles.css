@@ -16,6 +16,18 @@ body, html{
     --sec-oran-color: #ebb529;
 }
 
+.ql-toolbar.ql-snow{
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+}
+
+.ql-formats{
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-evenly !important;
+}
+
 @font-face{
     font-family: Kollektif;
     src: url("assets/fonts/Kollektif.ttf")
