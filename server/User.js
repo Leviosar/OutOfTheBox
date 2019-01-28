@@ -74,6 +74,10 @@ module.exports = class User{
     //   token: string,
     //   id: integer
     // }
+    // Input format:
+    // {
+    //   id: integer
+    // }
     // Description: Generate and insert (using postgreSQL upsert) a random SHA256 token to auth an user, returns the user_id and token
 
     async generateToken(request, response){
@@ -91,6 +95,12 @@ module.exports = class User{
     //   status: boolean,
     //   msg: string,
     //   error: string
+    // }
+    // Input format:
+    // {
+    //   password: string,
+    //   name: string,
+    //   email: string
     // }
     // Description: Register a user in the database with 10 rounds bcrypt hash
 
@@ -110,6 +120,37 @@ module.exports = class User{
             response.json({status: true, msg: "Cadastro realizado com sucesso"})    
         }else{
             response.json({status: false, msg: "Não foi possível realizar o cadastro", error: reply.error})    
+        }
+    }
+
+    // Input: request<express.request>, response<express.response>
+    // Output: JSON
+    // Output format:
+    // {
+    //   status: boolean,
+    //   msg: string,
+    //   error: string
+    // }
+    // Input format:
+    // {
+    //   id: number,
+    //   title: string,
+    //   content: string,
+    //   tags: [{name: string, color:string}]
+    // }
+    // Description: Register a class and all of his tags
+
+    async registerClass(request, response){
+        let data = request.params
+        let classQuery = await this.connection.insert("INSERT INTO class (id_teacher, title, content, created_in) VALUES ($1, $2, $3, CURRENT_TIMESTAMP) RETURNING id", request, response, [data.id, data.title, data.content])
+        if (classQuery.status) {
+            for (let i = 0; i < data.tags.length; i++) {
+                let tagQuery = await this.connection.insert("INSERT INTO tag (name, color) VALUES ($1, $2) ON CONFLICT (name) DO UPDATE name = $1 RETURNING id", request, response, [data.tags[i].name, data.tags[i].color])
+                let tagClassQuery = await this.connection.insert("INSERT INTO class_tag (id_class, id_tag) VALUES ($1, $2) ON CONFLICT (id_class, id_tag) DO NOTHING", request, response, [data.id, tagQuery.id])
+            }
+            response.json({status: true, msg: "Sua aula foi adicionada, bom sorte com a fama!", error: 'none'})
+        }else{
+            response.json({status: false, msg: "Não foi possível adicionar sua aula", error: classQuery.error})    
         }
     }
 }

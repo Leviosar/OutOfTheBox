@@ -7,6 +7,7 @@ let c_user = new User();
 
 c_app.post("/login", c_user.login.bind(c_user))
 c_app.post("/register", c_user.register.bind(c_user))
+c_app.post("/createClass/", c_user.registerClass.bind(c_user))
 c_app.get("/all", c_user.all.bind(c_user))
 c_app.get("/auth/:token", c_user.auth.bind(c_user))
 c_app.get("/generateToken/:id", c_user.generateToken.bind(c_user))

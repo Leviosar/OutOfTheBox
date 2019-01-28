@@ -45,7 +45,7 @@ module.exports = class Connect {
                 return reply
             }
             else{
-                let reply = {status: true, values: data, error: 'none'}
+                let reply = {status: true, values: data, error: 'none', inserted: res}
                 await this.pool.end()
                 return reply
             }
